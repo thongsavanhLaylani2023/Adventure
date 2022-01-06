@@ -237,6 +237,32 @@ elif choice == "4":
         + " were about to give up and face your death, you notice an iridescent glowing light shining"
         + " in the distance. Following the glowing lights you are met with an ethereal cave. Maybe"
         + " this is a treasure?")
+        print("")
+        print("Make a choice.")
+        print("1. Enter the cave")
+        print("2. Stare at the cave")
+        print("3. Destroy the cave")
+        choice = input(">")
+
+        if choice == "1":
+            print("Entering the cave cautiously, you are taken in by the magical atmosphere that"
+            + " surrounds you and suffocates your lungs, squeezing them in a way that feels"
+            + " threatening yet exciting. There are glowing crystals that line the cave beautifully,"
+            + " as if made of rich material. There's a low hum that purrs throughout the cave,"
+            + " causing a chilling vibration in your body. The hum begins to emanate breathing."
+            + " As you venture further into the cave there is a ring that shines ever so"
+            + " lusciously, as if waiting for you.")
+
+        elif choice == "2":
+            print("Too wary to enter the cave, you stare at it. Waiting for something out of fear of"
+            + " danger. You wait, and wait, and wait.. But nothing happens. Once you finally"
+            + " decide to enter the cave, the entrance behind you is closed due to the"
+            + " eruptuous collapsing of rocks and land above. When you turn back to try and break the rocks"
+            + ", a loud growl catches you off guard. Before you can turn to see what's causing it,"
+            + " you are enraptured in a warm interior and you can feel your bones being crushed as"
+            + " sharp teeth break through your flesh, killing you.")
+            print("YOU DIED")
+            exit()
 
     else:
         print("You decide not to take any of the set paths and folloiw your wits as well as your heart."
