@@ -252,6 +252,12 @@ elif choice == "4":
             + " causing a chilling vibration in your body. The hum begins to emanate breathing."
             + " As you venture further into the cave there is a ring that shines ever so"
             + " lusciously, as if waiting for you.")
+            print("")
+            print("What will you do?")
+            print("1. Take the ring")
+            print("2. Destroy the ring")
+            print("3. Leave")
+            choice = input(">")
 
         elif choice == "2":
             print("Too wary to enter the cave, you stare at it. Waiting for something out of fear of"
@@ -264,8 +270,63 @@ elif choice == "4":
             print("YOU DIED")
             exit()
 
+        elif choice == "3":
+            print("For some reason, you set your mind to destroy the cave. In your pack you take out"
+            + " explosives given to you by the troupe and set them atop the rocks of the cave as well as"
+            + " inside and around it. You detonate the bombs, causing an explosion similar to that of"
+            + " an avalanche. Rocks fall and gather on the ground, the cave collapses and the glowing"
+            + " light is no more. Satisfied, you're set to turn away and leave but a loud and low"
+            + " rumbling is heard beneath the rubble, a set of wings and fiery aura catches your eye."
+            + " A dragon, Khaen'ra, looks at you fiercely. He's angered at how you destroyed his"
+            + " beautiful home and is set on killing you.")
+            print("")
+            print("What's your next move?")
+            print("1. Fight")
+            print("2. Run")
+            print("3. Talk")
+            print("4. Give up")
+            choice = input(">")
+
+            if choice == "1":
+                roll = random.randrange(0, strength)
+                if roll > 90:
+                    print("You use your overpowing strength to kill the dragon, and through a"
+                    + " tough battle with bloodshed from both sides, you win. Having defeated"
+                    + " the dragon Khaen'ra, you feel good about yourself. If you take some"
+                    + " spoils of the battle, you'll be seen as the world's hero, won't you?")
+                    print("GAME OVER\n'HERO' ENDING")
+                    exit()
+
+                else:
+                    print("You attempt to fight the dragon Khaen'ra, but you're too weak. He laughs and"
+                    + " growls with pity for you before devouring you alive without leaving a single"
+                    + " trace of you on this world.")
+                    print("YOU DIED")
+                    exit()
+
+            elif choice == "2":
+                roll = random.randrange(0, dexterity)
+                if roll > 90:
+                    print("Knowing that you are not strong enough to fight the dragon Khaen'ra, you run"
+                    + " for your life like the lowly coward that you are. Thankfully, you manage to"
+                    + " escape his sights. However, you find yourself stuck in a slime swamp."
+                    + " You remember from your common sense that slime swamps are simiar to quick sand."
+                    + " You struggle to find a way out and are consumed by the slimes, suffocating to"
+                    + " your death.")
+                    print("YOU DIED")
+                    exit()
+
+                else:
+                    print("Knowing you are not strong enough to fight the dragon Khaen'ra, you run"
+                    + " for your life like the lowly coward taht you are. However, you are not"
+                    + " swift enough to outrun and escape the dragon, thus making yourself easy prey."
+                    + " He easily picks you up with his claws and viciously drops you to your death.")
+                    print("YOU DIED")
+                    exit()
+
+
     else:
-        print("You decide not to take any of the set paths and folloiw your wits as well as your heart."
+        print("You decide not to take any of the set paths and follow your wits as well as your heart."
         + " After a week of wandering, you are at a loss. You have no more food,  no more water, and"
         + " haven't seen a human in the last eight days. You decide to give up.")
         print("YOU DIED")
@@ -276,42 +337,7 @@ else:
     exit()
 
 
-#First Encounter
-print("Uh oh spaghetti-o! You encounter a menacing wall blocking your path. What do you do?")
-print("1. Punch wall")
-print("2. Reason with wall")
-print("3. Climb wall")
-print("4. Magic wall")
-choice = input(">")
 
-if choice == "1":
-    roll = random.randrange(0, strength)
-    if roll > 50:
-        print("The wall shatters in awe of your divine strength.")
-
-    else:
-        print("Your fist shatters in awe of the wall's divine strength.")
-        exit()
-
-elif choice == "2":
-    roll = random.randrange(0, charisma)
-    if roll > 40:
-        print("The wall blushes due to the charm of your words! It politely moves aside for you.")
-
-    else:
-        print("As you try to reason with the wall, it continues to stand there void of movement.." +
-        " I'm not sure what you were trying to do here, but it was worth a shot. Athough now you're stuck here.")
-        exit()
-
-elif choice == "3":
-    print("cool")
-
-elif choice == "4":
-    print("cool")
-
-else:
-    print("You're not that guy, pal. Trust me, you're not that guy.")
-    exit()
 
 
 
