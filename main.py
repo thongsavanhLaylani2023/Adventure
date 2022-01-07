@@ -163,7 +163,7 @@ print("")
 print("With that, you seperate from the group and set off in the woods, not following any trails as"
 + " you believe fate will lead you somewhere like the idiot that you are.")
 
-#First Encounter
+#First Encounter and More
 print("")
 print("Luckily, you reach a crossroads where there is a sign stating directions that you can take.")
 print("\nWhere will you head for?")
@@ -177,11 +177,36 @@ if choice == "1":
     roll = random.randrange(0, strength)
     if roll > 40:
         print("You decide to take the long road to the capital despite the dangers that lurk."
-        + " Luckily, you manage on your way there and defeat the many monsters,k bandits, and overrall"
+        + " Luckily, you manage on your way there and defeat the many monsters, bandits, and overrall"
         + " enemies that threaten your wellbeing. You continue down the road after the path is cleared"
         + " and after what's been five days you finally make it to the capital. You sold off the"
         + " loot that you gathered from killing enemies and make a solid amount of money."
         + " Though not rich, you can buy better equipment with it.")
+        print("")
+        print("What will you do?")
+        print("1. Shop for equipment")
+        print("2. Find a place to stay")
+        print("3. Leave Breath Mint Gelato")
+        choice = input(">")
+
+        if choice == "1":
+            print("You head to the local market. Thankfully, you're in the capital so only the best"
+            + " of the best are here.")
+
+        elif choice == "2":
+            print("You choose to look for a place to stay in the Capital. Everything is a bit pricy"
+            + " here due to this being the capital, so the prices are inflamed. However, you find a"
+            + " decent enough hotel to stay in, but some of the locals tend to avoid this place.")
+            print("Will you stay here?")
+            print("1. Yes")
+            print("2. No")
+            choice = input(">")
+
+            if choice == "1":
+                print("You decide to stay in the shady hotel. Pickign out a room, you unpack your belongings"
+                + " and leave to find a tavern but are jumped by a group of bandits outside your room and die.")
+                print("YOU DIED")
+                exit()
 
     else:
         print("You decide to take the long road to the capital despite the dangers that lurk."
@@ -231,7 +256,7 @@ elif choice == "3":
 
 elif choice == "4":
     roll = random.randrange(0, wisdom)
-    if roll > 50:
+    if roll > 45:
         print("You decide not to take any of the set paths and follow your wits as well as your heart."
         + " A few days in, you start to lose hope and feel that you are lost. However, just as you"
         + " were about to give up and face your death, you notice an iridescent glowing light shining"
@@ -324,6 +349,34 @@ elif choice == "4":
                     print("YOU DIED")
                     exit()
 
+            elif choice == "3":
+                roll = random.randrange(0, charisma)
+                if roll > 90:
+                    print("You decide to use your charismatic sense and talk to the dragon. You tell"
+                    + " him a lot of words and stuff. The dragon seems to be touched, but says that"
+                    + " it doesn't change the fact that you destroyed his home. He huffs angrily"
+                    + " and you quickly try to feed the dragon Khaen'ra excuses, but he isn't"
+                    + " having it and incinerates you with fire.")
+                    print("YOU DIED")
+                    exit()
+
+                else:
+                    print("You try to talk to the dragon Khaen'ra, but you stumble over your words"
+                    + " and he deems you stupid. Thinking the world would be better off with such"
+                    + " a dumb person like you, he kills you ruthlessly. Without regret.")
+                    print("YOU DIED")
+                    exit()
+
+            elif choice == "4":
+                print("You decide to give yourself up to the dragon and face death. Thinking you're brave"
+                + " for this, the dragon Khaen'ra says he'll give you an honorable death and eats you."
+                + " At least it was honorable.")
+                print("YOU DIED")
+                exit()
+
+            else:
+                print("You're not that guy, pal. Trust me, you're not that guy.")
+                exit()
 
     else:
         print("You decide not to take any of the set paths and follow your wits as well as your heart."
