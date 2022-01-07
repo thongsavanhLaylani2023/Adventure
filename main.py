@@ -191,7 +191,14 @@ if choice == "1":
 
         if choice == "1":
             print("You head to the local market. Thankfully, you're in the capital so only the best"
-            + " of the best are here.")
+            + " of the best are here. But there are too many stores to choose from.")
+            print("")
+            print("Which store will you go to?")
+            print("1. Wagner's Smithy")
+            print("2. Mira's Magic Marvel")
+            print("3. Lottie's Outfitters")
+            print("4. Argyle's Food Emporium")
+            choice = input(">")
 
         elif choice == "2":
             print("You choose to look for a place to stay in the Capital. Everything is a bit pricy"
